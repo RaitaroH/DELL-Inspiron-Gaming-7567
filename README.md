@@ -9,37 +9,46 @@ This is going to be my experience with the DELL Gaming 15.6'' Inspiron 7567. I d
 The laptop runs really well, crushing pretty much anything. The packaging was not branded too much so don’t worry about that. I also got a red backpack for the laptop. I have to say it holds the laptop really well.
 
 The screen is 1080p 60Hz and it is NOT A TN panel. I was worried I would get the TN panel, but no. This screen looks really nice.
-An interesting thing is the hinge. The laptop can be opened one handed, BUT you can also keep it one hand, holding it from the back without having it fall. Is not a thinkpad or something but it does work. Nice surprise.
+An interesting thing is the hinge. The laptop can be opened one handed, BUT you can also keep it one hand, holding it from the back without having it fall (I don't promise you won't drop it). Is not a thinkpad or something but it does work. Nice surprise. Keep in mind that the laptop is quite heavy so maybe not the best option.
 
-The speakers are quite loud, though very directional. I almost never go above 50% unless the audio for something is quite low. At 100% or 150% (enable that) the audio gets distorted as you would expect.
+The speakers are quite loud, though very directional. I almost never go above 50% unless the audio for something is quite low. At 100% or 150% (enabled that) the audio gets distorted as you would expect.
 
 The keyboard is only in red backlight, 3 steps (none, 50%, 100%). Not bad but I don’t love it or something like that. If you hit some keys besides dead on they kinda feel like they missed the mark.
 
+The touchpad is good. No separate buttons but it is good. In KDE I don't see any fancy options for it like zoom and alike. I can put one finger down and use another to scroll, not just do that on the right side. I did not activate any corner stuff either.
+
 The ports are quite nice on this. I did use the ethernet so I didn’t have to set the wifi, but the wifi can easily reach 10Mb/s + on my network so…
 
-The battery isn’t the best in the world but what would you expect for a gaming laptop. The laptop charges quite fast and the cable has a blue light (I actually like it because it is enough light to see around in the dark after I closed my laptop).
+The battery isn’t the best in the world but what would you expect for a gaming laptop. The laptop charges quite fast and the cable has a blue light (I actually like it because it is enough light to see around in the dark after I closed my laptop). The brick also has a nice strap to keep stuff nice. The charger also was compatible with Europe so I didn't have to do anything.
 
 # Temperature and Unigine Heaven benchmark
-The temperatures are quite… I could even say bad. The fan is quite loud but it only kicks in after 60+ degrees.
-The CPU gets kinda toasty ( 50-60°C at idle; 70-80°C during heavy load like gaming) the GPU is much better ( 45-50°C at idle; doesn’t pass 60 during heavy load), the cooling can keep it under control (for more temperature info look below). Now, I would like to ask the people in here if they thing this is dangerous. I did find that the max temperature allowed  is 100°C for the CPU and around 75°C for the GPU. That is fine but still…
+The temperatures are quite… I could even say bad, maybe. The fan is quite loud but it only kicks in after 60+ degrees (you cna change that with software).
+The CPU gets kinda toasty (50-60°C at idle; 70-80°C during heavy load like gaming; I did rectify that bellow) the GPU is much better (45-50°C at idle; doesn’t pass 65 during heavy load), the cooling can keep it under control (for more temperature info look below). Now, I would like to ask the people in here if they thing this is dangerous. I did find that the max temperature allowed  is 100°C for the CPU and around 75/95°C for the GPU. That is fine but still…
 I also red these:
 https://www.reddit.com/r/intel/comments/6fs2vw/i7_7700hq_operating_temps_question/
 also this:
 https://www.reddit.com/r/intel/comments/6qsmmn/intel_i7_7700hq_temps_way_too_high/
 
 
-So I did go in the BIOS and disabled TurboBoost and this reduced the max CPU temp to 70°C (max 72). also the GPU ended up around 60-65°C (sometimes 66). No deep in fps or overall performance. Keep in mind that I even wrote this line as the Unigine Heaven benchmark was going. Here is the result in basic and in extreme:
-[!alt-tag](https://raw.githubusercontent.com/RaitaroH/DELL-Inspiron-Gaming-7567/master/Images/Heaven1a.png)
-[!alt-tag](https://raw.githubusercontent.com/RaitaroH/DELL-Inspiron-Gaming-7567/master/Images/Heaven1b.png)
+So I did go in the BIOS and disabled TurboBoost and this reduced the max CPU temp to 70°C (max 72) from 80 or so. Also the GPU ended up around 60-65°C (sometimes 66). No deep in fps or overall performance. Keep in mind that I even wrote this line ( in libre writer) as the Unigine Heaven benchmark was going. Here is the result in basic and in extreme:
+
+![alt-tag](https://raw.githubusercontent.com/RaitaroH/DELL-Inspiron-Gaming-7567/master/Images/Heaven1a.png)
+![alt-tag](https://raw.githubusercontent.com/RaitaroH/DELL-Inspiron-Gaming-7567/master/Images/Heaven1b.png)
 
 I also went in the BIOS and disabled HyperThreading. In short it was worse on temperatures (under heavier load; almost the same on idle) but slightly better on performance under heavy load according to the benchmark. The slight differences are most likely insignificant. In my opinion I would rather not do this.
 Here are the results:
 The CPU temp was around 74°C reaching even 76°C. The GPU was around 68-70°C. So much worse than before. 
 I also redone the Unigine Heaven test in extreme mode and here is the result:
-[!alt-tag](https://raw.githubusercontent.com/RaitaroH/DELL-Inspiron-Gaming-7567/master/Images/Heaven2.png)
+
+![alt-tag](https://raw.githubusercontent.com/RaitaroH/DELL-Inspiron-Gaming-7567/master/Images/Heaven2.png)
 
 OTHER BIOS changes:
 I did go in the BIOS and played around with a few things: activated virtualization, made sure secure boot and alike are disabled. I also changed boot order for Linux installation in order to install the OS. I also changed the FN keys to work as F1...F12 first and be modified with Fn instead of the inverted default. I also went ahead and made the keyboard not be lit all the time under AC Power. I also disabled the webcam and mike.
+
+# Gaming
+Well see above for fps. I also installed VMware. The youtuber `egee` made some videos about it so you can look at those. Nothing fany like Nier;Automata would work there so you know. It works well for very light games (say VNs) and older games.
+
+For emulation though you can try [rpcs3](https://rpcs3.net/). I did try it out with Persona 5 and it worked rather well. The CPU does get toasty as above though but the game is playable. Some sound problems at first but during the game it was fine. I did not try it out with the BIOS changes mentioned above. I will update this after I try it out.
 
 # Linux and inxi -F
 When it comes to linux I put KDE Neon 5.11 on here and it runs just beautifully. To be fair I tried to install Antergos but it hanged at boot from the USB, just so you know. I decided that hey, if I don’t want to bother fixing antergos not booting I don’t think I would like to bother fixing other problems that may arise.
@@ -47,7 +56,7 @@ When it comes to linux I put KDE Neon 5.11 on here and it runs just beautifully.
 
 Now more info about the system with linux on:
 ```
-Kernel: 4.10.0-42-generic x86_64 (64 bit) Desktop: KDE Plasma 5.11.5
+Kernel:    4.10.0-42-generic x86_64 (64 bit) Desktop: KDE Plasma 5.11.5
            Distro: neon 16.04 xenial
 Machine:   System: Dell (portable) product: Inspiron 15 7000 Gaming
            Mobo: Dell model: 065C71 v: A00 Bios: Dell v: 01.00.06 date: 04/26/2017
