@@ -26,13 +26,16 @@ https://www.reddit.com/r/intel/comments/6fs2vw/i7_7700hq_operating_temps_questio
 also this:
 https://www.reddit.com/r/intel/comments/6qsmmn/intel_i7_7700hq_temps_way_too_high/
 
+
 So I did go in the BIOS and disabled TurboBoost and this reduced the max CPU temp to 70°C (max 72). also the GPU ended up around 60-65°C (sometimes 66). No deep in fps or overall performance. Keep in mind that I even wrote this line as the Unigine Heaven benchmark was going. Here is the result in basic and in extreme:
+[!alt-tag](https://raw.githubusercontent.com/RaitaroH/DELL-Inspiron-Gaming-7567/master/Images/Heaven1a.png)
+[!alt-tag](https://raw.githubusercontent.com/RaitaroH/DELL-Inspiron-Gaming-7567/master/Images/Heaven1b.png)
 
 I also went in the BIOS and disabled HyperThreading. In short it was worse on temperatures (under heavier load; almost the same on idle) but slightly better on performance under heavy load according to the benchmark. The slight differences are most likely insignificant. In my opinion I would rather not do this.
 Here are the results:
 The CPU temp was around 74°C reaching even 76°C. The GPU was around 68-70°C. So much worse than before. 
 I also redone the Unigine Heaven test in extreme mode and here is the result:
-
+[!alt-tag](https://raw.githubusercontent.com/RaitaroH/DELL-Inspiron-Gaming-7567/master/Images/Heaven2.png)
 
 OTHER BIOS changes:
 I did go in the BIOS and played around with a few things: activated virtualization, made sure secure boot and alike are disabled. I also changed boot order for Linux installation in order to install the OS. I also changed the FN keys to work as F1...F12 first and be modified with Fn instead of the inverted default. I also went ahead and made the keyboard not be lit all the time under AC Power. I also disabled the webcam and mike.
