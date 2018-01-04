@@ -49,6 +49,7 @@ I did go in the BIOS and played around with a few things: activated virtualizati
 Well see above for fps. I also installed VMware. The youtuber `egee` made some videos about it so you can look at those. Nothing fany like Nier;Automata would work there so you know. It works well for very light games (say VNs) and older games.
 
 For emulation though you can try [rpcs3](https://rpcs3.net/). I did try it out with Persona 5 and it worked rather well. The CPU does get toasty as above though but the game is playable. Some sound problems at first but during the game it was fine. I did not try it out with the BIOS changes mentioned above. I will update this after I try it out.
+UPDATE: The temperature went from 80 to 65 while using the emulator to play Persona 5. That is quite the improvement. The game also runs like it did before.
 
 # Linux and inxi -F
 When it comes to linux I put KDE Neon 5.11 on here and it runs just beautifully. To be fair I tried to install Antergos but it hanged at boot from the USB, just so you know. I decided that hey, if I don’t want to bother fixing antergos not booting I don’t think I would like to bother fixing other problems that may arise.
