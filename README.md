@@ -1,5 +1,6 @@
 # Model
 DELL 15.6'' Inspiron Gaming 7567, 1080p 60Hz IPS, Procesor Intel® CoreTM i7-7700HQ (6M Cache,up to 3.80 GHz), 8GB DDR4, 1TB + 8GB SSH, GeForce GTX 1050 Ti 4GB, Linux, Black
+
 I also added: SSD ADATA SX8000 128GB PCI Express 3.0 x4 M.2 2280. Now, I did not know this laptop DOES NOT support NVMe but fuck it.
 
 # My experience
