@@ -51,6 +51,41 @@ Well see above for fps. I also installed VMware. The youtuber `egee` made some v
 For emulation though you can try [rpcs3](https://rpcs3.net/). I did try it out with Persona 5 and it worked rather well. The CPU does get toasty as above though but the game is playable. Some sound problems at first but during the game it was fine. I did not try it out with the BIOS changes mentioned above. I will update this after I try it out.
 UPDATE: The temperature went from 80 to 65 while using the emulator to play Persona 5. That is quite the improvement. The game also runs like it did before.
 
+**UPDATE** In the meantime I have cleaned the laptop and applied some proper thermal paste. 
+TL;DR Much better temperatures around 80°C for hard stuff, 70°C stablized for some gaming.
+
+The temperature at idle is around 50ish, where as compiling pipeline object in rpcs3 (vulkan) gives something like the results you see bellow. Way better than before, now with HyperThreading on.
+
+```
+coretemp-isa-0000
+Adapter: ISA adapter
+Package id 0:  +79.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 0:        +79.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 1:        +70.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 2:        +77.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 3:        +77.0°C  (high = +100.0°C, crit = +100.0°C)
+
+dell_smm-virtual-0
+Adapter: Virtual device
+Processor Fan: 4914 RPM
+Video Fan:     5119 RPM
+CPU:            +81.0°C  
+Ambient:        +55.0°C  
+SODIMM:         +54.0°C  
+Other:          +47.0°C  
+```
+During actual gameplay with a boss gives this. The fan is not an issue considering the music in game. I can say is barely an issue even with the game muted. Also this temperature is the plateau as well. Very good results. DO CONSIDER I have the laptop on a cooler (not on) just for some better airflow. Also I have a bunch of tabs opened in 2 separate profiles in waterfox. All of this just to add some extra weight.
+
+```
+Processor Fan: 4552 RPM
+Video Fan:     4573 RPM
+CPU:            +67.0°C  
+Ambient:        +53.0°C  
+SODIMM:         +51.0°C  
+Other:          +48.0°C  
+
+```
+
 # Linux and inxi -F
 When it comes to linux I put KDE Neon 5.11 on here and it runs just beautifully. To be fair I tried to install Antergos but it hanged at boot from the USB, just so you know. I decided that hey, if I don’t want to bother fixing antergos not booting I don’t think I would like to bother fixing other problems that may arise.
 
