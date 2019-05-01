@@ -121,7 +121,7 @@ And here are the bechmarks:
 
 ![alt-tag](./Images/superpostion_perf_after.png)    
 
-![alt-tag](./Images/superpostion_vr_after.png)
+![alt-tag](./Images/superposition_vr_after.png)
 
 # Linux and inxi -F
 When it comes to linux I put KDE Neon 5.11 on here and it runs just beautifully. To be fair I tried to install Antergos but it hanged at boot from the USB, just so you know. I decided that hey, if I don’t want to bother fixing antergos not booting I don’t think I would like to bother fixing other problems that may arise.
