@@ -22,6 +22,9 @@ The ports are quite nice on this. I did use the ethernet so I didn’t have to s
 The battery isn’t the best in the world but what would you expect for a gaming laptop. The laptop charges quite fast and the cable has a blue light (I actually like it because it is enough light to see around in the dark after I closed my laptop). The brick also has a nice strap to keep stuff nice. The charger also was compatible with Europe so I didn't have to do anything.
 
 # Temperature and Unigine Heaven benchmark
+
+NOTE: This temps are before I aplied better thermal paste. For those results look bellow.
+
 The temperatures are quite… I could even say bad, maybe. The fan is quite loud but it only kicks in after 60+ degrees (you cna change that with software).
 The CPU gets kinda toasty (50-60°C at idle; 70-80°C during heavy load like gaming; I did rectify that bellow) the GPU is much better (45-50°C at idle; doesn’t pass 65 during heavy load), the cooling can keep it under control (for more temperature info look below). Now, I would like to ask the people in here if they thing this is dangerous. I did find that the max temperature allowed  is 100°C for the CPU and around 75/95°C for the GPU. That is fine but still…
 I also red these:
@@ -41,6 +44,8 @@ The CPU temp was around 74°C reaching even 76°C. The GPU was around 68-70°C. 
 I also redone the Unigine Heaven test in extreme mode and here is the result:
 
 ![alt-tag](./Images/Heaven2.png)
+
+![alt-tag](./Images/Superposition_Benchmark_v1.0_4246_1515221226.png)
 
 OTHER BIOS changes:
 I did go in the BIOS and played around with a few things: activated virtualization, made sure secure boot and alike are disabled. I also changed boot order for Linux installation in order to install the OS. I also changed the FN keys to work as F1...F12 first and be modified with Fn instead of the inverted default. I also went ahead and made the keyboard not be lit all the time under AC Power. I also disabled the webcam and mike.
@@ -85,6 +90,31 @@ SODIMM:         +51.0°C
 Other:          +48.0°C  
 
 ```
+
+For the heaven benchmark the temperature was around what it was during compiling for rpcs3.
+
+```
+coretemp-isa-0000
+Adapter: ISA adapter
+Package id 0:  +79.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 0:        +70.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 1:        +79.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 2:        +72.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 3:        +69.0°C  (high = +100.0°C, crit = +100.0°C)
+
+dell_smm-virtual-0
+Adapter: Virtual device
+Processor Fan: 4950 RPM
+Video Fan:     5150 RPM
+CPU:            +80.0°C  
+Ambient:        +54.0°C  
+SODIMM:         +66.0°C  
+Other:          +53.0°C  
+```
+
+And here are the results: 
+
+![alt-tag](./Images/heaven_after_paste.png)
 
 # Linux and inxi -F
 When it comes to linux I put KDE Neon 5.11 on here and it runs just beautifully. To be fair I tried to install Antergos but it hanged at boot from the USB, just so you know. I decided that hey, if I don’t want to bother fixing antergos not booting I don’t think I would like to bother fixing other problems that may arise.
