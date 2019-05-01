@@ -21,7 +21,7 @@ The ports are quite nice on this. I did use the ethernet so I didn’t have to s
 
 The battery isn’t the best in the world but what would you expect for a gaming laptop. The laptop charges quite fast and the cable has a blue light (I actually like it because it is enough light to see around in the dark after I closed my laptop). The brick also has a nice strap to keep stuff nice. The charger also was compatible with Europe so I didn't have to do anything.
 
-# Temperature and Unigine Heaven benchmark
+# Temperature and Unigine Heaven/Superposition benchmark
 
 NOTE: This temps are before I aplied better thermal paste. For those results look bellow.
 
@@ -31,7 +31,6 @@ I also red these:
 https://www.reddit.com/r/intel/comments/6fs2vw/i7_7700hq_operating_temps_question/
 also this:
 https://www.reddit.com/r/intel/comments/6qsmmn/intel_i7_7700hq_temps_way_too_high/
-
 
 So I did go in the BIOS and disabled TurboBoost and this reduced the max CPU temp to 70°C (max 72) from 80 or so. Also the GPU ended up around 60-65°C (sometimes 66). No deep in fps or overall performance. Keep in mind that I even wrote this line ( in libre writer) as the Unigine Heaven benchmark was going. Here is the result in basic and in extreme:
 
@@ -45,7 +44,9 @@ I also redone the Unigine Heaven test in extreme mode and here is the result:
 
 ![alt-tag](./Images/Heaven2.png)
 
-![alt-tag](./Images/Superposition_Benchmark_v1.0_4246_1515221226.png)
+![alt-tag](./Images/superpostion_perf.png)
+
+![alt-tag](./Images/superpostion_vr.png)
 
 OTHER BIOS changes:
 I did go in the BIOS and played around with a few things: activated virtualization, made sure secure boot and alike are disabled. I also changed boot order for Linux installation in order to install the OS. I also changed the FN keys to work as F1...F12 first and be modified with Fn instead of the inverted default. I also went ahead and made the keyboard not be lit all the time under AC Power. I also disabled the webcam and mike.
@@ -56,7 +57,9 @@ Well see above for fps. I also installed VMware. The youtuber `egee` made some v
 For emulation though you can try [rpcs3](https://rpcs3.net/). I did try it out with Persona 5 and it worked rather well. The CPU does get toasty as above though but the game is playable. Some sound problems at first but during the game it was fine. I did not try it out with the BIOS changes mentioned above. I will update this after I try it out.
 UPDATE: The temperature went from 80 to 65 while using the emulator to play Persona 5. That is quite the improvement. The game also runs like it did before.
 
-**UPDATE** In the meantime I have cleaned the laptop and applied some proper thermal paste. 
+## After thermal paste (update) 
+
+In the meantime I have cleaned the laptop and applied some proper thermal paste. 
 TL;DR Much better temperatures around 80°C for hard stuff, 70°C stablized for some gaming.
 
 The temperature at idle is around 50ish, where as compiling pipeline object in rpcs3 (vulkan) gives something like the results you see bellow. Way better than before, now with HyperThreading on.
@@ -112,9 +115,13 @@ SODIMM:         +66.0°C
 Other:          +53.0°C  
 ```
 
-And here are the results: 
+And here are the bechmarks: 
 
-![alt-tag](./Images/heaven_after_paste.png)
+![alt-tag](./Images/heaven_after_paste.png)    
+
+![alt-tag](./Images/superpostion_perf_after.png)    
+
+![alt-tag](./Images/superpostion_vr_after.png)
 
 # Linux and inxi -F
 When it comes to linux I put KDE Neon 5.11 on here and it runs just beautifully. To be fair I tried to install Antergos but it hanged at boot from the USB, just so you know. I decided that hey, if I don’t want to bother fixing antergos not booting I don’t think I would like to bother fixing other problems that may arise.
